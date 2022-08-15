@@ -82,6 +82,10 @@ def change_bet(choice, index):
     if choice == "d":
         player_balance -= bet[index]
         bet[index] *= 2
+    elif choice == "sur":
+        bet[index] /= 2
+        player_balance += bet[index]
+
     else:
         bet.append(bet[index])
         player_balance -= bet[index]
@@ -99,9 +103,6 @@ def pay_out(hand, player_won, index):
         # player wins normal
         player_balance += bet[index] * 2
     player_balance_history.append(player_balance)
-
-
-bust_count = 0
 
 
 def player_turn(player, dealer):
@@ -130,6 +131,9 @@ def player_turn(player, dealer):
                     break
             elif choice == "s":
                 break
+            elif choice == "sur":
+                change_bet("sur", index)
+                hand = [0]
             elif choice == "d":
                 hand.append(get_new_card())
                 change_bet("d", index)
@@ -196,16 +200,18 @@ def basics_decide_to_split(player, dealer):
         if dealer == 7 or dealer == 10 or dealer == 11:
             return "n"
     elif player == [7, 7]:
-        if dealer > 7:
+        if dealer >= 8:
             return "n"
     elif player == [6, 6]:
-        if dealer > 6:
+        if dealer >= 7:
             return "n"
     elif player == [4, 4]:
-        if dealer != 4 or dealer != 5:
+        if dealer == 4 or dealer == 5:
+            return "y"
+        else:
             return "n"
     elif player == [3, 3] or player == [2, 2]:
-        if dealer > 7:
+        if dealer >= 8:
             return "n"
     return "y"
 
@@ -234,6 +240,10 @@ hard_total_table = [["h", "d", "d", "d", "d", "h", "h", "h", "h", "h"],
 
 def basics_decide_hard_total(hand, dealer):
     player_count = sum(hand)
+    if player_count == 16 and len(hand) == 2 and (9 <= dealer <= 11):
+        return "sur"
+    if player_count == 15 and len(hand) == 2 and dealer == 10:
+        return "sur"
     if player_count <= 8:
         return "h"
     elif player_count >= 17:
@@ -259,14 +269,13 @@ def win_rate():
     print(f"Win-rate: {str((player_stats[0] / (player_stats[0] + player_stats[1])) * 100)} %")
     print(f"Tie-rate: {str((player_stats[2] / sum(player_stats)) * 100)} %")
     print(f"Balance: {player_balance}")
-    print(f"Busted count: {bust_count}")
 
 
 # play game
 def play_game(rounds):
     create_card_deck()
     counter = 0  # counter for number of games played
-    while counter < rounds and player_balance > 0:
+    while counter < rounds:
         you, bank = create_player_and_dealer()
         you, bank = deal_cards(you, bank)
         # print_cards(you, bank)
@@ -274,17 +283,17 @@ def play_game(rounds):
             you = player_turn(you, bank)
             bank = dealer_turn(bank)
         declare_winner(you, bank)
-        if len(deck) < random.randint(10, 30):
+        if len(deck) < random.randint(50, 100):
             create_card_deck()
         counter += 1
         if counter == rounds:
             win_rate()
             break
-    win_rate()
+    # win_rate()
     print("Rounds played: ", counter)
     plt.plot(player_balance_history)
     plt.show()
 
 
 if __name__ == '__main__':
-    play_game(1_000_000)
+    play_game(10_000_000)
