@@ -4,13 +4,12 @@ import matplotlib.pyplot as plt
 
 # player balance
 
-player_balance = 1000
+player_balance = 10000
 player_balance_history = []
 # player stats
 player_stats = [0, 0, 0]
 bet_size = 1
 bet = [0]
-surrender_count = 0
 deck = []
 
 
@@ -118,7 +117,7 @@ def player_turn(player, dealer):
         if sum(hand) == 21:
             continue
         while True:
-            choice = basics_decide_totals(hand, player, dealer[0])
+            choice = basics_decide_totals(hand, dealer[0])
             if choice == "h":
                 hand.append(get_new_card())
                 if sum(hand) == 21:
@@ -245,7 +244,7 @@ def basics_decide_hard_total(hand, dealer):
         return hard_total_table[player_count - 9][dealer - 2]
 
 
-def basics_decide_totals(hand, player, dealer):
+def basics_decide_totals(hand, dealer):
     if hand.count(11) == 1:
         return basics_decide_soft_total(hand, dealer)
     else:
@@ -257,10 +256,8 @@ def win_rate():
     print("Wins:   ", player_stats[0])
     print("Losses: ", player_stats[1])
     print("Ties:   ", player_stats[2])
-    print(f"Winrate: {str((player_stats[0] / (player_stats[0] + player_stats[1])) * 100)} %")
-    print(f"Tierate: {str((player_stats[2] / sum(player_stats)) * 100)} %")
-    print(f"Surrender count: {surrender_count / sum(player_stats) * 100} %")
-    print(f"Saved losses: {surrender_count / 2}")
+    print(f"Win-rate: {str((player_stats[0] / (player_stats[0] + player_stats[1])) * 100)} %")
+    print(f"Tie-rate: {str((player_stats[2] / sum(player_stats)) * 100)} %")
     print(f"Balance: {player_balance}")
     print(f"Busted count: {bust_count}")
 
@@ -269,7 +266,7 @@ def win_rate():
 def play_game(rounds):
     create_card_deck()
     counter = 0  # counter for number of games played
-    while counter < rounds:
+    while counter < rounds and player_balance > 0:
         you, bank = create_player_and_dealer()
         you, bank = deal_cards(you, bank)
         # print_cards(you, bank)
