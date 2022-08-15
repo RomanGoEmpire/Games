@@ -200,13 +200,13 @@ def basics_decide_to_split(player, dealer):
         if dealer > 7:
             return "n"
     elif player == [6, 6]:
-        if dealer > 6 or dealer ==2:
+        if dealer > 6:
             return "n"
     elif player == [4, 4]:
-        # if dealer != 4 or dealer != 5:
-        return "n"
+        if dealer != 4 or dealer != 5:
+            return "n"
     elif player == [3, 3] or player == [2, 2]:
-        if dealer > 7 or dealer == 2 or dealer == 3:
+        if dealer > 7:
             return "n"
     return "y"
 
