@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cfda56c-12e4-4181-a970-b413a67c063c" name="Changes" comment="Updated repo to Games&#10; added &quot;Mensch-ärgere-dich-nicht&quot;">
-      <change afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot.py" afterDir="false" />
+    <list default="true" id="7cfda56c-12e4-4181-a970-b413a67c063c" name="Changes" comment="added minesweeper_bot.py">
+      <change afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot_google.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/minesweeper/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/BlackJack.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/.idea/mädn.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mensch_ärgere_dich_nicht/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minesweeper/minesweeper_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Roman/PycharmProjects/Games",
+    "last_opened_file_path": "C:/Users/Roman/PycharmProjects/Games/minesweeper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +47,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Roman\PycharmProjects\Games\minesweeper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Roman\PycharmProjects\Games" />
     </key>
@@ -87,8 +77,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="minesweeper_bot_google" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Games" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minesweeper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minesweeper/minesweeper_bot_google.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Games" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minesweeper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minesweeper/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.minesweeper_bot_google" />
         <item itemvalue="Python.minesweeper_bot" />
       </list>
     </recent_temporary>
@@ -103,7 +139,8 @@
       <updated>1665528926973</updated>
       <workItem from="1665528928257" duration="440000" />
       <workItem from="1665865573223" duration="15000" />
-      <workItem from="1666805222909" duration="22181000" />
+      <workItem from="1666805222909" duration="23962000" />
+      <workItem from="1666856388352" duration="38663000" />
     </task>
     <task id="LOCAL-00001" summary="Updated repo to Games&#10; added &quot;Mensch-ärgere-dich-nicht&quot;">
       <created>1665529127349</created>
@@ -119,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665529160986</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added minesweeper_bot.py">
+      <created>1666832324640</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666832324640</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,21 +182,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated repo to Games&#10; added &quot;Mensch-ärgere-dich-nicht&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated repo to Games&#10; added &quot;Mensch-ärgere-dich-nicht&quot;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/minesweeper/minesweeper_bot.py</url>
-          <line>200</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added minesweeper_bot.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added minesweeper_bot.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Games$test.coverage" NAME="test Coverage Results" MODIFIED="1666883873579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
     <SUITE FILE_PATH="coverage/Games$main.coverage" NAME="main Coverage Results" MODIFIED="1666805273809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blackjack" />
-    <SUITE FILE_PATH="coverage/Games$minesweeper_bot.coverage" NAME="minesweeper_bot Coverage Results" MODIFIED="1666831792003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/Games$minesweeper_bot.coverage" NAME="minesweeper_bot Coverage Results" MODIFIED="1666896160560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/Games$minesweeper_bot_google.coverage" NAME="minesweeper_bot_google Coverage Results" MODIFIED="1666876514036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
   </component>
 </project>
