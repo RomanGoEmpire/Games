@@ -1,9 +1,8 @@
 # Website https://minesweeper.online/de
 # size 38
+import pyautogui as p
 import random
 import time
-
-import pyautogui as p
 
 blank = (198, 198, 198)
 flag = (0, 0, 0)
@@ -156,19 +155,24 @@ def done_tile():
 
 
 def solve():
-    global indexX, indexY
-    if (x + offset) > 1623:
-        p.moveTo(start_x, y + offset)
-        indexX = 0
-        indexY += 1
-    if (y + offset) > 978:
-        p.moveTo(start_x, start_y)
-        indexX, indexY = 0, 0
-    p.move(offset, 0)
-    indexX += 1
+    if get_color(x + offset, y) != blank and get_color(x + offset, y) != flag:
+        p.moveTo(x + offset, y)
+    elif get_color(x, y + offset) != blank and get_color(x, y + offset) != flag:
+        p.moveTo(x, y + offset)
+    elif get_color(x - offset, y) != blank and get_color(x - offset, y) != flag:
+        p.moveTo(x - offset, y)
+    elif get_color(x, y - offset) != blank and get_color(x, y - offset) != flag:
+        p.moveTo(x, y - offset)
+    else:
+        if (x + offset) > 1623:
+            p.moveTo(start_x, y + offset)
+        elif (y + offset) > 978:
+            p.moveTo(start_x, start_y)
+        else:
+         p.move(offset, 0)
     update_position()
-    if done[indexX][indexY]:
-        return False
+    #if done[indexX][indexY]:
+    #   return False
     if get_color(x, y) == blank or get_color(x, y) == flag:
         return False
     elif get_color(x, y) == bomb:
@@ -200,9 +204,9 @@ def solve():
 
 def main():
     time.sleep(2)
-    for i in range(5):
-        p.moveTo(random.randint(start_x, 1605), random.randint(start_y, 996))
-        p.leftClick()
+    #for i in range(5):
+    #    p.moveTo(random.randint(start_x, 1605), random.randint(start_y, 996))
+    #    p.leftClick()
     p.moveTo(start_x, start_y)
     p.leftClick()
     update_position()
