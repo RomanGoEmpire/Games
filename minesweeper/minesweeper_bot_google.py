@@ -192,7 +192,7 @@ def solve():
         tiles_x.append(x)
         tiles_y.append(y)
         return False
-    if is_blank(x, y) or is_flag(x, y):
+    if is_blank(x, y) or is_flag(x, y) or is_mouse_on_hidden(x, y):
         return False
 
     if compare_colors(x, y, one):
@@ -221,9 +221,9 @@ def solve():
         reveal(x, y)
     if hidden_count + flag_counted == number:
         mark_hidden(x, y)
-    if not done_tile(x, y):
-        tiles_x.append(x)
-        tiles_y.append(y)
+    # if not done_tile(x, y):
+    #     tiles_x.append(x)
+    #     tiles_y.append(y)
     return False
 
 
@@ -252,29 +252,21 @@ def is_blank(x, y):
 
 
 def main():
-    p.moveTo(start_x, start_y)
-    p.leftClick()
-    p.moveTo(start_x,end_y)
-    p.leftClick()
-    p.moveTo(end_x, end_y)
-    p.leftClick()
-    p.moveTo(end_x, start_y)
-    p.leftClick()
     free = True
     tiles_left = len(tiles_x)
     initialize_tiles()
-    # for i in range(10):
-    #     p.moveTo(tiles_x[randint(0, len(tiles_x) - 1)], tiles_y[randint(0, len(tiles_y) - 1)])
-    #     p.leftClick()
-    #     x, y = p.position()
-    #     if is_blank(x, y):
-    #         break
-    # found = False
-    # while not found:
-    #     x, y = tiles_x.popleft(), tiles_y.popleft()
-    #     p.moveTo(x, y)
-    #     if not is_hidden(x, y):
-    #         found = True
+    for i in range(5):
+        p.moveTo(tiles_x[randint(0, len(tiles_x) - 1)], tiles_y[randint(0, len(tiles_y) - 1)])
+        p.leftClick()
+        x, y = p.position()
+        if is_blank(x, y):
+            break
+    found = False
+    while not found:
+        x, y = tiles_x.popleft(), tiles_y.popleft()
+        p.moveTo(x, y)
+        if not is_hidden(x, y):
+            found = True
     while free:
         if solve():
             free = False

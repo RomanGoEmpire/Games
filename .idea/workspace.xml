@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cfda56c-12e4-4181-a970-b413a67c063c" name="Changes" comment="added minesweeper_bot.py">
-      <change afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot_google.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minesweeper/test.py" afterDir="false" />
+    <list default="true" id="7cfda56c-12e4-4181-a970-b413a67c063c" name="Changes" comment="added minesweeper_bot_google.py.py&#10;reworked minesweeper_bot.py">
+      <change afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot_google_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/minesweeper/minesweeper_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minesweeper/minesweeper_bot_google.py" beforeDir="false" afterPath="$PROJECT_DIR$/minesweeper/minesweeper_bot_google.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +33,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Roman/PycharmProjects/Games/minesweeper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Roman/PycharmProjects/Games/minesweeper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Roman\PycharmProjects\Games\minesweeper" />
@@ -54,7 +54,7 @@
       <recent name="C:\Users\Roman\PycharmProjects\Games" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.minesweeper_bot">
     <configuration name="minesweeper_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Games" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,6 +99,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="minesweeper_bot_google_new" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Games" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minesweeper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minesweeper/minesweeper_bot_google_new.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Games" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,9 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.minesweeper_bot" />
+        <item itemvalue="Python.minesweeper_bot_google_new" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.minesweeper_bot_google" />
-        <item itemvalue="Python.minesweeper_bot" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +163,20 @@
       <workItem from="1665528928257" duration="440000" />
       <workItem from="1665865573223" duration="15000" />
       <workItem from="1666805222909" duration="23962000" />
-      <workItem from="1666856388352" duration="38663000" />
+      <workItem from="1666856388352" duration="41314000" />
+      <workItem from="1666904660980" duration="2812000" />
+      <workItem from="1666908499740" duration="890000" />
+      <workItem from="1666910858171" duration="505000" />
+      <workItem from="1666913287416" duration="19090000" />
+      <workItem from="1666964723402" duration="6205000" />
+      <workItem from="1666996306952" duration="1044000" />
+      <workItem from="1666999547976" duration="20108000" />
+      <workItem from="1667041618953" duration="2596000" />
+      <workItem from="1667046394151" duration="11483000" />
+      <workItem from="1667080303831" duration="3830000" />
+      <workItem from="1667095180238" duration="1256000" />
+      <workItem from="1667135188793" duration="58000" />
+      <workItem from="1667144316025" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="Updated repo to Games&#10; added &quot;Mensch-ärgere-dich-nicht&quot;">
       <created>1665529127349</created>
@@ -163,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666832324640</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added minesweeper_bot_google.py.py&#10;reworked minesweeper_bot.py">
+      <created>1666896967165</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896967165</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,12 +226,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated repo to Games&#10; added &quot;Mensch-ärgere-dich-nicht&quot;" />
     <MESSAGE value="added minesweeper_bot.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added minesweeper_bot.py" />
+    <MESSAGE value="added minesweeper_bot_google.py.py&#10;reworked minesweeper_bot.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added minesweeper_bot_google.py.py&#10;reworked minesweeper_bot.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Games$test.coverage" NAME="test Coverage Results" MODIFIED="1666883873579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/Games$test.coverage" NAME="test Coverage Results" MODIFIED="1667095506233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
     <SUITE FILE_PATH="coverage/Games$main.coverage" NAME="main Coverage Results" MODIFIED="1666805273809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blackjack" />
-    <SUITE FILE_PATH="coverage/Games$minesweeper_bot.coverage" NAME="minesweeper_bot Coverage Results" MODIFIED="1666896160560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
-    <SUITE FILE_PATH="coverage/Games$minesweeper_bot_google.coverage" NAME="minesweeper_bot_google Coverage Results" MODIFIED="1666876514036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/Games$minesweeper_bot.coverage" NAME="minesweeper_bot Coverage Results" MODIFIED="1667080519656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/Games$minesweeper_bot_google_new.coverage" NAME="minesweeper_bot_google_new Coverage Results" MODIFIED="1667084878742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/Games$minesweeper_bot_google.coverage" NAME="minesweeper_bot_google Coverage Results" MODIFIED="1666907209376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
   </component>
 </project>
